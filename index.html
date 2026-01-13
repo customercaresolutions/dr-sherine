@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dr. Sherine Braganza | Vitreo-Retinal Surgeon</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    
+    <script src="menu.js" defer></script>
+
+    <style>
+        :root { --primary: #004a99; --secondary: #eef5ff; --accent: #00a8e8; --dark: #333; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--dark); margin: 0; padding: 0; background-color: #fcfcfc; }
+
+        /* Content spacing since header is now injected via JS */
+        main { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
+        
+        .hero-section { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: start; margin-bottom: 50px; }
+        .hero-box { background: white; padding: 35px; border-radius: 15px; border-top: 6px solid var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
+        .hero-box h2 { color: var(--primary); font-size: 2rem; margin-top: 0; }
+        
+        .status-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; }
+        .contact-info { margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee; }
+        .contact-item { display: flex; align-items: center; margin-bottom: 10px; color: #555; font-size: 0.95rem; }
+        .contact-item i { color: var(--primary); margin-right: 12px; width: 20px; }
+
+        .visual-container { text-align: center; }
+        .visual-placeholder { background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 20px; padding: 30px; color: white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
+        
+        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 40px; }
+        .card { background: white; padding: 25px; border-radius: 12px; border: 1px solid #eee; transition: 0.3s; }
+        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: var(--accent); }
+        .card h3 { color: var(--primary); margin-top: 0; font-size: 1.1rem; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; }
+
+        footer { background: #f1f1f1; padding: 40px 5%; margin-top: 60px; text-align: center; border-top: 1px solid #ddd; }
+    </style>
+</head>
+<body>
+
+<main>
+    <section class="hero-section">
+        <div class="hero-text">
+            <div class="hero-box">
+                <span class="status-badge"><i class="fas fa-check-circle"></i> Currently Accepting Referrals</span>
+                <h2>Senior Vitreo-Retinal Surgeon</h2>
+                <p><strong>Head of Vitreo-Retinal Services</strong> at Narayana Nethralaya II, Bangalore. Over 25 years of surgical expertise, specializing in complex retinal detachments, ROP management, and advanced clinical imaging.</p>
+                
+                <div class="contact-info">
+                    <div class="contact-item"><i class="fas fa-hospital"></i> Narayana Nethralaya II, Bommasandra Health City, Bangalore</div>
+                    <div class="contact-item"><i class="fas fa-envelope"></i> [Your Professional Email]</div>
+                    <div class="contact-item"><i class="fas fa-phone-alt"></i> Appointment: +91 80 6612 1400</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="visual-container">
+            
+            <div class="visual-placeholder" style="margin-top: 20px;">
+                <i class="fas fa-microscope" style="font-size: 3rem; margin-bottom: 10px;"></i>
+                <h4>Surgical Excellence</h4>
+                <p style="font-size: 0.85rem; opacity: 0.9;">Leading Clinical Innovation in Bangalore</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="grid">
+        <div class="card">
+            <h3>Professional Experience</h3>
+            <p>A distinguished career in surgical retina, ROP, and hospital infection control.</p>
+            <a href="experience.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Timeline →</a>
+        </div>
+        <div class="card">
+            <h3>Scientific Research</h3>
+            <p>15+ Peer-reviewed publications and over 120 global presentations.</p>
+            <a href="research.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Publications →</a>
+        </div>
+        <div class="card">
+            <h3>Academic Mentorship</h3>
+            <p>Designated DNB Examiner and Thesis Guide for over 18 postgraduate students.</p>
+            <a href="academic.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Students →</a>
+        </div>
+        <div class="card">
+            <h3>Career Honors</h3>
+            <p>University Gold Medalist and three-time State Champion Athlete.</p>
+            <a href="experience.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Awards →</a>
+        </div>
+    </div>
+</main>
+
+<footer>
+    <p>&copy; 2026 Dr. Sherine Braganza | Senior Consultant Vitreo-Retinal Surgeon</p>
+    <p style="font-size: 0.8rem; color: #777;">Member: VRSI, AIOS, KOS | Fellow of the Royal College of Surgeons (FRCS)</p>
+</footer>
+
+</body>
+</html>
