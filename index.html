@@ -1,96 +1,479 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Dr. Sherine Braganza | Vitreo-Retinal Surgeon</title>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
-    
-    <script src="menu.js" defer></script>
-
-    <style>
-        :root { --primary: #004a99; --secondary: #eef5ff; --accent: #00a8e8; --dark: #333; }
-        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: var(--dark); margin: 0; padding: 0; background-color: #fcfcfc; }
-
-        /* Content spacing since header is now injected via JS */
-        main { max-width: 1100px; margin: 40px auto; padding: 0 20px; }
-        
-        .hero-section { display: grid; grid-template-columns: 1.2fr 0.8fr; gap: 40px; align-items: start; margin-bottom: 50px; }
-        .hero-box { background: white; padding: 35px; border-radius: 15px; border-top: 6px solid var(--primary); box-shadow: 0 10px 30px rgba(0,0,0,0.05); }
-        .hero-box h2 { color: var(--primary); font-size: 2rem; margin-top: 0; }
-        
-        .status-badge { display: inline-block; background: #e8f5e9; color: #2e7d32; padding: 5px 15px; border-radius: 20px; font-weight: bold; font-size: 0.85rem; margin-bottom: 15px; text-transform: uppercase; }
-        .contact-info { margin-top: 25px; padding-top: 20px; border-top: 1px solid #eee; }
-        .contact-item { display: flex; align-items: center; margin-bottom: 10px; color: #555; font-size: 0.95rem; }
-        .contact-item i { color: var(--primary); margin-right: 12px; width: 20px; }
-
-        .visual-container { text-align: center; }
-        .visual-placeholder { background: linear-gradient(135deg, var(--primary), var(--accent)); border-radius: 20px; padding: 30px; color: white; box-shadow: 0 10px 20px rgba(0,0,0,0.1); }
-        
-        .grid { display: grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap: 20px; margin-top: 40px; }
-        .card { background: white; padding: 25px; border-radius: 12px; border: 1px solid #eee; transition: 0.3s; }
-        .card:hover { transform: translateY(-5px); box-shadow: 0 10px 20px rgba(0,0,0,0.05); border-color: var(--accent); }
-        .card h3 { color: var(--primary); margin-top: 0; font-size: 1.1rem; border-bottom: 2px solid var(--secondary); padding-bottom: 8px; }
-
-        footer { background: #f1f1f1; padding: 40px 5%; margin-top: 60px; text-align: center; border-top: 1px solid #ddd; }
-    </style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Dr. Sherine Marina D’Souza Braganza — Vitreoretinal Surgeon</title>
+  <meta name="description" content="Dr. Sherine Marina D’Souza Braganza — Senior Consultant & Head, Vitreoretinal Services at Narayana Nethralaya II (Bangalore). Retina surgery, ROP, tele-ophthalmology, AI in ophthalmology." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='64' height='64'%3E%3Crect width='64' height='64' rx='14' fill='%230b1220'/%3E%3Cpath d='M19 34c6-14 20-14 26 0-6 14-20 14-26 0Z' fill='%2360a5fa'/%3E%3Ccircle cx='32' cy='34' r='4.2' fill='%23e5e7eb'/%3E%3C/svg%3E">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Physician",
+    "name": "Dr. Sherine Marina D’Souza Braganza",
+    "jobTitle": "Vitreoretinal Surgeon",
+    "affiliation": "Narayana Nethralaya II, Bangalore",
+    "email": "mailto:drsherine@gmail.com",
+    "telephone": "+91-9845366008"
+  }
+  </script>
 </head>
 <body>
+  <a class="skip" href="#main">Skip to content</a>
 
-<main>
-    <section class="hero-section">
-        <div class="hero-text">
-            <div class="hero-box">
-                <span class="status-badge"><i class="fas fa-check-circle"></i> Currently Accepting Referrals</span>
-                <h2>Senior Vitreo-Retinal Surgeon</h2>
-                <p><strong>Head of Vitreo-Retinal Services</strong> at Narayana Nethralaya II, Bangalore. Over 25 years of surgical expertise, specializing in complex retinal detachments, ROP management, and advanced clinical imaging.</p>
-                
-                <div class="contact-info">
-                    <div class="contact-item"><i class="fas fa-hospital"></i> Narayana Nethralaya II, Bommasandra Health City, Bangalore</div>
-                    <div class="contact-item"><i class="fas fa-envelope"></i> [Your Professional Email]</div>
-                    <div class="contact-item"><i class="fas fa-phone-alt"></i> Appointment: +91 80 6612 1400</div>
-                </div>
+  <header class="site-header">
+    <div class="container header-inner">
+      <div class="brand">
+        <div class="brand-mark" aria-hidden="true">SB</div>
+        <div class="brand-text">
+          <div class="brand-name">Dr. Sherine Braganza</div>
+          <div class="brand-sub">Vitreoretinal Surgeon • ROP • AI in Ophthalmology</div>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-toggle" aria-expanded="false" aria-controls="navMenu">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="hamburger" aria-hidden="true"></span>
+        </button>
+        <div id="navMenu" class="nav-menu">
+          <a href="#about">About</a>
+          <a href="#expertise">Expertise</a>
+          <a href="#experience">Experience</a>
+          <a href="#research">Research</a>
+          <a href="#awards">Awards</a>
+          <a href="#contact">Contact</a>
+          <button id="printBtn" class="btn btn-ghost" type="button">Print / Save PDF</button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-card">
+          <p class="kicker">Senior Consultant & Head, Vitreoretinal Services</p>
+          <h1>Dr. Sherine Marina D’Souza Braganza</h1>
+          <p class="lede">
+            25+ years in surgical retina and retinopathy of prematurity (ROP). Experience in
+            tele‑ophthalmology, EMR design, infection control leadership, and AI-driven healthcare innovation.
+          </p>
+
+          <div class="pill-row" aria-label="Key highlights">
+            <span class="pill">Complex VR surgery</span>
+            <span class="pill">ROP screening & treatment</span>
+            <span class="pill">Tele‑ophthalmology (KIDROP)</span>
+            <span class="pill">OCT/OCTA</span>
+            <span class="pill">Training & examining (DNB/NBE)</span>
+          </div>
+
+          <div class="cta-row">
+            <a class="btn" href="#contact">Contact</a>
+            <a class="btn btn-ghost" href="#research">Research & Publications</a>
+          </div>
+
+          <div class="meta-grid" role="list">
+            <div class="meta" role="listitem">
+              <div class="meta-label">Institution</div>
+              <div class="meta-value">Narayana Nethralaya II, Bangalore</div>
             </div>
+            <div class="meta" role="listitem">
+              <div class="meta-label">Medical Council</div>
+              <div class="meta-value">KMC 37,292</div>
+            </div>
+            <div class="meta" role="listitem">
+              <div class="meta-label">Languages</div>
+              <div class="meta-value">English, Hindi, Konkani, Kannada, Telugu, Tamil</div>
+            </div>
+          </div>
         </div>
 
-        <div class="visual-container">
-            
-            <div class="visual-placeholder" style="margin-top: 20px;">
-                <i class="fas fa-microscope" style="font-size: 3rem; margin-bottom: 10px;"></i>
-                <h4>Surgical Excellence</h4>
-                <p style="font-size: 0.85rem; opacity: 0.9;">Leading Clinical Innovation in Bangalore</p>
+        <aside class="profile">
+          <div class="profile-card">
+            <div class="avatar" aria-hidden="true">
+              <div class="avatar-inner">
+                <span>SB</span>
+              </div>
             </div>
-        </div>
+            <h2 class="profile-title">At a glance</h2>
+            <ul class="profile-list">
+              <li><strong>Role:</strong> Head of VR Services, Health City branch</li>
+              <li><strong>Location:</strong> Bangalore, Karnataka, India</li>
+              <li><strong>Email:</strong> <a href="mailto:drsherine@gmail.com">drsherine@gmail.com</a></li>
+              <li><strong>Phone:</strong> <a href="tel:+919845366008">+91 98453 66008</a></li>
+              <li><strong>Nationality:</strong> Indian</li>
+            </ul>
+            <p class="fineprint">Tip: Replace the initials avatar with a professional headshot by updating <code>assets/headshot.jpg</code>.</p>
+          </div>
+
+          <div class="profile-card subtle">
+            <h3>Quick links</h3>
+            <div class="quick-links">
+              <a class="chip" href="#presentations">Presentations</a>
+              <a class="chip" href="#courses">Instruction Courses</a>
+              <a class="chip" href="#publications">Publications</a>
+              <a class="chip" href="#service">Leadership & Service</a>
+            </div>
+          </div>
+        </aside>
+      </div>
     </section>
 
-    <div class="grid">
-        <div class="card">
-            <h3>Professional Experience</h3>
-            <p>A distinguished career in surgical retina, ROP, and hospital infection control.</p>
-            <a href="experience.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Timeline →</a>
+    <section id="about" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>About</h2>
+          <p class="muted">Professional summary and current appointment.</p>
         </div>
-        <div class="card">
-            <h3>Scientific Research</h3>
-            <p>15+ Peer-reviewed publications and over 120 global presentations.</p>
-            <a href="research.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Publications →</a>
-        </div>
-        <div class="card">
-            <h3>Academic Mentorship</h3>
-            <p>Designated DNB Examiner and Thesis Guide for over 18 postgraduate students.</p>
-            <a href="academic.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Students →</a>
-        </div>
-        <div class="card">
-            <h3>Career Honors</h3>
-            <p>University Gold Medalist and three-time State Champion Athlete.</p>
-            <a href="experience.html" style="color:var(--primary); text-decoration:none; font-weight:bold; font-size:0.9rem;">View Awards →</a>
-        </div>
-    </div>
-</main>
 
-<footer>
-    <p>&copy; 2026 Dr. Sherine Braganza | Senior Consultant Vitreo-Retinal Surgeon</p>
-    <p style="font-size: 0.8rem; color: #777;">Member: VRSI, AIOS, KOS | Fellow of the Royal College of Surgeons (FRCS)</p>
-</footer>
+        <div class="cards two">
+          <article class="card">
+            <h3>Professional profile</h3>
+            <p>
+              Dynamic vitreoretinal surgeon with 25+ years of experience in surgical retina and in treating
+              retinopathy of prematurity (ROP). Skilled in tele‑ophthalmology, AI-driven healthcare
+              innovation, state-of-the-art VR surgery, hospital infection control, and public health programmes
+              including KIDROP.
+            </p>
+          </article>
 
+          <article class="card">
+            <h3>Current role</h3>
+            <p>
+              Senior Consultant and Head, Vitreoretinal Services — Narayana Nethralaya II (Superspeciality Eye
+              Hospital), Bommasandra Health City, Bangalore.
+            </p>
+            <div class="callout">
+              <strong>Core focus:</strong> complex VR surgery • ROP • tele‑ROP models • OCT/OCTA research • fellowship training
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="expertise" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Expertise</h2>
+          <p class="muted">Core competencies and clinical/innovation focus areas.</p>
+        </div>
+
+        <div class="cards three">
+          <article class="card">
+            <h3>Clinical</h3>
+            <ul class="bullets">
+              <li>Complex vitreoretinal surgery (RD, VH, complicated detachments)</li>
+              <li>ROP diagnosis, screening networks, and treatment (laser/cryotherapy)</li>
+              <li>Medical retina: lasers, FA/ICG, OCT/OCTA</li>
+              <li>Ultrasonography (B‑scan), electrophysiology & imaging interpretation</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Research & Innovation</h3>
+            <ul class="bullets">
+              <li>AI and data science in ophthalmology (DR screening initiatives)</li>
+              <li>Tele‑ophthalmology systems & workflow design</li>
+              <li>EMR design and health system innovation</li>
+              <li>OCTA studies in DR/RVO/AMD/CKD cohorts</li>
+            </ul>
+          </article>
+
+          <article class="card">
+            <h3>Leadership & Teaching</h3>
+            <ul class="bullets">
+              <li>Postgraduate teaching, thesis supervision, fellow mentoring</li>
+              <li>DNB / NBE examiner and assessor roles</li>
+              <li>Hospital infection control leadership and NABH auditing</li>
+              <li>Capacity building and public health programmes</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="experience" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Professional experience</h2>
+          <p class="muted">Selected roles. Full details available in the downloadable CV.</p>
+        </div>
+
+        <div class="timeline" aria-label="Work history">
+          <div class="titem">
+            <div class="tdate">Nov 2006 – Present</div>
+            <div class="tcontent">
+              <h3>Narayana Nethralaya (NN) — Vitreoretinal Surgeon</h3>
+              <p>
+                Performing retinal detachment surgeries (buckling and vitrectomy) including complicated cases.
+                Consultant for international patients. Head of VR services (NN2 branch) and involved in
+                training fellows and DNB postgraduates. Proficient in lasers and imaging (FA/ICG/OCT/OCTA),
+                and ROP screening and laser treatment for newborns.
+              </p>
+            </div>
+          </div>
+
+          <div class="titem">
+            <div class="tdate">Dec 2003 – Nov 2006</div>
+            <div class="tcontent">
+              <h3>Lion’s Eye Hospital — Consultant VR Surgeon</h3>
+              <p>
+                Retinal detachment surgeries, cryopexy, vitrectomies (including 23g), medical retina and lasers,
+                FA/ICG, B‑scan, OCT; and cataract surgery experience.
+              </p>
+            </div>
+          </div>
+
+          <div class="titem">
+            <div class="tdate">Feb 2002 – Present (Academic)</div>
+            <div class="tcontent">
+              <h3>Prathima Institute of Medical Sciences — Assistant Professor</h3>
+              <p>Teaching and clinical duties within a tertiary care teaching hospital (MCI recognized).</p>
+            </div>
+          </div>
+
+          <div class="titem">
+            <div class="tdate">Aug 2001 – Feb 2002</div>
+            <div class="tcontent">
+              <h3>St. John’s National Academy of Health Sciences — Lecturer</h3>
+              <p>Undergraduate and postgraduate teaching; surgical exposure across cataract, oculoplasty, and retina.</p>
+            </div>
+          </div>
+
+          <div class="titem">
+            <div class="tdate">2000 – 2001</div>
+            <div class="tcontent">
+              <h3>Senior Residency</h3>
+              <p>Undergraduate teaching, clinics, anterior segment surgeries, and medical retina including lasers.</p>
+            </div>
+          </div>
+
+          <div class="titem">
+            <div class="tdate">1992 – 1994</div>
+            <div class="tcontent">
+              <h3>Emmaus Hospital & Eye Services — Medical Officer</h3>
+              <p>
+                Community eye care with weekly camps (300–400 patients per camp), screening, peri‑operative work,
+                independent and assisted surgeries, and follow‑up.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="research" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Research, presentations & publications</h2>
+          <p class="muted">Use search to quickly locate items. (This site includes selected highlights for readability.)</p>
+        </div>
+
+        <div class="toolbar">
+          <label class="search">
+            <span class="sr-only">Search research items</span>
+            <input id="searchBox" type="search" placeholder="Search publications, presentations, topics (e.g., ROP, OCTA, AI, ARMD)..." />
+          </label>
+          <div class="toolbar-actions">
+            <button class="btn btn-ghost" type="button" data-expand="all">Expand all</button>
+            <button class="btn btn-ghost" type="button" data-collapse="all">Collapse all</button>
+          </div>
+        </div>
+
+        <div class="accordion" id="researchAccordion">
+          <details open class="acc">
+            <summary>Selected peer‑reviewed publications</summary>
+            <ul class="list" id="publications">
+              <li data-tags="rop redrop screening ophthalmic epidemiology 2012">REDROP Study — low-cost method of enrolling infants at risk for ROP screening (Ophthalmic Epidemiology, 2012).</li>
+              <li data-tags="rop macular changes iovs 2011">Clinically undetected macular changes in early ROP on SD‑OCT (IOVS, 2011).</li>
+              <li data-tags="rop macular edema ophthalmology 2012">Macular edema in premature infants (Ophthalmology, 2012).</li>
+              <li data-tags="rop zone 1 protocol american journal of ophthalmology 2011">Protocol-based management outcomes for Zone‑I ROP (AJO, 2011).</li>
+              <li data-tags="rop rural nicu indian paediatrics 2012">ROP in a rural ICU in South India — prospective study (Indian Paediatrics, 2012).</li>
+              <li data-tags="rop platelets retina 2010">Do platelets have a role in APROP? (RETINA, 2010).</li>
+              <li data-tags="genetics inherited retinal disorders graefes 2023">Inherited retinal disorders: genotype‑phenotype correlation & importance of genetic testing/counseling (Graefe’s Archive, Jan 2023).</li>
+              <li data-tags="teleophthalmology kidrop childhood blindness 2022">Tele‑ophthalmology and preventable childhood blindness: KIDROP experience (2022).</li>
+              <li data-tags="anesthesia dexmedetomidine ropivacaine 2022">Dexmedetomidine with ropivacaine in peribulbar block in VR surgery (Journal of Anesthesiology, 2022).</li>
+              <li data-tags="genetics counseling ijo 2026">Next generation sequencing and genetic counseling in ocular disorders (IJO, 2026).</li>
+            </ul>
+            <p class="note">For a comprehensive list, see the full CV.</p>
+          </details>
+
+          <details class="acc">
+            <summary>Conference presentations (selected highlights)</summary>
+            <ul class="list" id="presentations">
+              <li data-tags="aao chicago 2010 kidrop">“Creating a safety net for ROP in India” — AAO Retina Subspecialty Conference, Chicago (Oct 2010).</li>
+              <li data-tags="woc berlin 2010 tele-rop">Tele‑ROP: The India Experience — WOC, Berlin (June 2010).</li>
+              <li data-tags="euretina 2009 nice france diabetic retinopathy">Polycythemia vera complicating PDR — EURETINA, Nice (2009).</li>
+              <li data-tags="apao 2021 oca rvo">Microvascular changes in OCTA in RVO after dexamethasone implant — APAO (Sep 2021).</li>
+              <li data-tags="aios 2025 new delhi crao hodgkins lymphoma">“Hodgkin’s lymphoma causing CRAO” — AIOS, New Delhi (2025).</li>
+              <li data-tags="aios 2025 intraocular foreign body">“What lies beneath” — challenging removal of large intraocular foreign body — AIOS, New Delhi (2025).</li>
+              <li data-tags="retina summit goa 2024 speaker">Speaker — Retina Summit, Goa (Feb 2024).</li>
+              <li data-tags="aios jaipur 2026 instructor sstc dstc">Instructor — SSTC/DSTC courses — AIOS (Jaipur, 2026).</li>
+            </ul>
+          </details>
+
+          <details class="acc">
+            <summary>Thesis & supervision</summary>
+            <div class="grid-two">
+              <div>
+                <h4>MS Thesis</h4>
+                <p><strong>Retinopathy of Prematurity</strong> — Guide: Dr. R.R. Battu.</p>
+              </div>
+              <div>
+                <h4>Thesis supervision (selected)</h4>
+                <ul class="list compact" id="theses">
+                  <li data-tags="rop">Spectrum and treatment of ROP — DNB (2011).</li>
+                  <li data-tags="octa rvo">Dexamethasone implant effect on macular perfusion using OCTA in RVO — DNB (2021).</li>
+                  <li data-tags="octa ckd dialysis">Retinal microvasculature abnormalities in CKD on dialysis using SS‑OCTA — DNB (2021).</li>
+                  <li data-tags="rop rural urban karnataka">ROP trends rural vs urban centres in Karnataka — DNB (2021).</li>
+                  <li data-tags="sleep apnea octa">OCTA changes in sleep apnoea syndrome — DNB (Oct 2025).</li>
+                </ul>
+              </div>
+            </div>
+          </details>
+        </div>
+      </div>
+    </section>
+
+    <section id="service" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Leadership & service</h2>
+          <p class="muted">Clinical governance, auditing, and programme leadership.</p>
+        </div>
+
+        <div class="cards two">
+          <article class="card">
+            <h3>Hospital infection control & NABH</h3>
+            <ul class="bullets">
+              <li>Trained NABH internal auditor; inter‑departmental audits and corrective actions</li>
+              <li>Secretary, Hospital Infection Control (HIC) committee; meeting coordination and minutes</li>
+              <li>Retina department clinical audits; KPI reporting (NN2)</li>
+              <li>Prepared HIC manual aligned to NABH 5th edition standards</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Teaching & examining</h3>
+            <ul class="bullets">
+              <li>Examiner for DNB / NBE examinations and formative assessments</li>
+              <li>Mentoring and training fellows in VR surgery</li>
+              <li>Instruction courses in DME, ROP updates, laser/indirect ophthalmoscopy, etc.</li>
+              <li>Coursework: Registered for AI in medical education (NBE, Jan 2026)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="courses" class="section alt">
+      <div class="container">
+        <div class="section-head">
+          <h2>Instruction courses & workshops</h2>
+          <p class="muted">Selected course activity (summary).</p>
+        </div>
+        <div class="card">
+          <ul class="list compact">
+            <li>Management of diabetic macular edema — Co‑instructor</li>
+            <li>ROP: An update for the general ophthalmologist — Co‑instructor</li>
+            <li>ROP instruction course — KOS, Udupi (Oct 2010)</li>
+            <li>Anti‑VEGF’s in DME — KOS, Udupi (Oct 2010)</li>
+            <li>Hands‑on indirect ophthalmoscopy and retinal lasers — TRUE‑D International Conference (May 2014)</li>
+            <li>PG update / foundation courses — 2018–2019</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="awards" class="section">
+      <div class="container">
+        <div class="section-head">
+          <h2>Awards & recognition</h2>
+          <p class="muted">Selected achievements.</p>
+        </div>
+
+        <div class="cards two">
+          <article class="card">
+            <h3>Academic awards</h3>
+            <ul class="bullets">
+              <li>Gold Medal in MS Ophthalmology (Rajiv Gandhi University of Health Sciences, Sep 1999)</li>
+              <li>Best PG Paper Presentation Award (KOS, 1998) — Corneal ulcers: strategy & sensitivity patterns</li>
+              <li>H.J. Mehta award — best undergraduate research work</li>
+            </ul>
+          </article>
+          <article class="card">
+            <h3>Professional & conference awards</h3>
+            <ul class="bullets">
+              <li>Best paper (Pediatric Ophthalmology section) — APROP laser study</li>
+              <li>Innovative healthcare through PPP (KIDROP team, Nov 2012)</li>
+              <li>Best poster — KOS 2018 (Terson syndrome outcomes)</li>
+              <li>Best ROP paper — BOS conference (2022)</li>
+            </ul>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section contact">
+      <div class="container">
+        <div class="contact-card">
+          <div>
+            <h2>Contact</h2>
+            <p class="muted">For referrals, collaboration, speaking engagements, and academic partnerships.</p>
+
+            <div class="contact-grid">
+              <div class="contact-item">
+                <div class="label">Email</div>
+                <a href="mailto:drsherine@gmail.com">drsherine@gmail.com</a>
+              </div>
+              <div class="contact-item">
+                <div class="label">Phone</div>
+                <a href="tel:+919845366008">+91 98453 66008</a>
+              </div>
+              <div class="contact-item">
+                <div class="label">Address</div>
+                <div>Villa No. 46, Arbors by the Lake, Hulimangala Post, Kyalasanahalli, Bangalore 560105</div>
+              </div>
+              <div class="contact-item">
+                <div class="label">Institution</div>
+                <div>Narayana Nethralaya II — Bommasandra Health City, Bangalore</div>
+              </div>
+            </div>
+          </div>
+
+          <form class="contact-form" id="contactForm" novalidate>
+            <h3>Send a message</h3>
+            <p class="fineprint">This form opens your email client (no server required).</p>
+
+            <label>
+              Name
+              <input id="fName" type="text" autocomplete="name" placeholder="Your name" required>
+            </label>
+            <label>
+              Email
+              <input id="fEmail" type="email" autocomplete="email" placeholder="you@example.com" required>
+            </label>
+            <label>
+              Message
+              <textarea id="fMsg" rows="5" placeholder="How can I help?" required></textarea>
+            </label>
+            <button class="btn" type="submit">Compose email</button>
+            <div class="form-note" id="formNote" role="status" aria-live="polite"></div>
+          </form>
+        </div>
+
+        <footer class="footer">
+          <p>© <span id="year"></span> Dr. Sherine Marina D’Souza Braganza. Built as a lightweight, single‑page site.</p>
+          <p class="fineprint">You can host this on GitHub Pages / Netlify / any static host. No backend needed.</p>
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
