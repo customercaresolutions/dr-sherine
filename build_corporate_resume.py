@@ -21,10 +21,15 @@ def add_hyperlink(paragraph, url, text, bold=False):
 
     new_run = OxmlElement("w:r")
     rPr = OxmlElement("w:rPr")
-    # style as Hyperlink
     rStyle = OxmlElement("w:rStyle")
     rStyle.set(qn("w:val"), "Hyperlink")
     rPr.append(rStyle)
+    color = OxmlElement("w:color")
+    color.set(qn("w:val"), "0563C1")
+    rPr.append(color)
+    underline = OxmlElement("w:u")
+    underline.set(qn("w:val"), "single")
+    rPr.append(underline)
     if bold:
         b = OxmlElement("w:b")
         rPr.append(b)
