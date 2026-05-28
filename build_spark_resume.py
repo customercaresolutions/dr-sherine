@@ -1,4 +1,4 @@
-"""Generate spark-resume.docx — 2-page resume tailored for Spark Therapeutics with links to the spark-therapeutics site."""
+"""Generate spark-resume.docx — 2-page resume tailored for ocular gene therapy & inherited retinal disorder companies (e.g. Spark Therapeutics), with links to the supporting site."""
 
 from docx import Document
 from docx.oxml.ns import qn
@@ -70,7 +70,7 @@ p = doc.add_paragraph(
 )
 
 p = doc.add_paragraph()
-add_hyperlink(p, f"{BASE_URL}/", "Full Online Resume (Spark Therapeutics version)", bold=True)
+add_hyperlink(p, f"{BASE_URL}/", "Full Online Resume (Ocular Gene Therapy & IRD version)", bold=True)
 
 # === PROFESSIONAL SUMMARY ===
 doc.add_heading("PROFESSIONAL SUMMARY", level=2)
@@ -86,7 +86,7 @@ doc.add_paragraph(
     "practice."
 )
 
-# === CORE EXPERTISE (Spark fit) ===
+# === CORE EXPERTISE ===
 doc.add_heading("CORE EXPERTISE", level=2)
 for item in [
     "Inherited Retinal Disorders (IRDs) • Genotype–Phenotype Correlation • Genetic Counseling",
@@ -98,16 +98,16 @@ for item in [
 ]:
     doc.add_paragraph(item, style="List Bullet")
 
-# === WHY SPARK ===
-doc.add_heading("ALIGNMENT WITH SPARK THERAPEUTICS", level=2)
+# === WHY THIS PROFILE FITS ===
+doc.add_heading("ALIGNMENT WITH OCULAR GENE THERAPY & IRD PROGRAMS", level=2)
 doc.add_paragraph(
-    "Spark Therapeutics sits at the intersection of retinal disease, ocular gene therapy, inherited "
-    "retinal disorders, physician education, and real-world clinical implementation. The role calls "
-    "for senior retina specialists who understand patient identification pathways, retinal imaging "
-    "interpretation, disease progression, referral workflows, treatment-center engagement, and how "
-    "advanced therapies translate into actual ophthalmic practice. 25+ years in medical retina, ROP, "
-    "tertiary retinal care, multidisciplinary teaching, and IRD/genetic-counseling research map "
-    "directly onto those needs."
+    "Ocular gene therapy programs (companies like Spark Therapeutics) sit at the intersection of "
+    "retinal disease, advanced therapeutics, inherited retinal disorders, physician education, and "
+    "real-world clinical implementation. These roles call for senior retina specialists who "
+    "understand patient identification pathways, retinal imaging interpretation, disease progression, "
+    "referral workflows, treatment-center engagement, and how advanced therapies translate into "
+    "actual ophthalmic practice. 25+ years in medical retina, ROP, tertiary retinal care, "
+    "multidisciplinary teaching, and IRD / genetic-counseling research map directly onto those needs."
 )
 
 # === PROFESSIONAL EXPERIENCE ===
@@ -237,7 +237,7 @@ for item in [
 # === FOOTER ===
 p = doc.add_paragraph()
 p.add_run("For comprehensive details: ")
-add_hyperlink(p, f"{BASE_URL}/", "Full Online Resume (Spark Therapeutics version)", bold=True)
+add_hyperlink(p, f"{BASE_URL}/", "Full Online Resume (Ocular Gene Therapy & IRD version)", bold=True)
 
 p = doc.add_paragraph()
 p.add_run("drsherine@gmail.com | +91 98453 66008 | ")
