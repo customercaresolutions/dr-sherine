@@ -24,7 +24,7 @@
     }
 
     .container {
-      max-width: 600px;
+      max-width: 900px;
       text-align: center;
     }
 
@@ -42,7 +42,7 @@
 
     .version-selector {
       display: grid;
-      grid-template-columns: 1fr 1fr;
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
       margin-bottom: 30px;
     }
@@ -79,11 +79,13 @@
       line-height: 1.5;
     }
 
-    @media (max-width: 600px) {
+    @media (max-width: 900px) {
       .version-selector {
         grid-template-columns: 1fr;
       }
+    }
 
+    @media (max-width: 600px) {
       h1 {
         font-size: 1.8em;
       }
@@ -105,6 +107,11 @@
       <a href="versions/corporate/" class="version-card">
         <h2>Corporate</h2>
         <p>Healthcare AI • Product Strategy • Diagnostics</p>
+      </a>
+
+      <a href="versions/spark-therapeutics/" class="version-card">
+        <h2>Spark Therapeutics</h2>
+        <p>Ocular Gene Therapy • Inherited Retinal Disorders • Medical Retina</p>
       </a>
     </div>
   </div>
